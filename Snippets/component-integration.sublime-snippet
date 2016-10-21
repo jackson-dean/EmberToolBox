@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+import { moduleForComponent, test } from 'ember-qunit';
+import hbs from 'htmlbars-inline-precompile';
+
+moduleForComponent('$1', 'Integration | Component | $1', {
+  integration: true
+});
+
+test('it renders', 1, function(assert) {
+  // Set any properties with this.set('myProperty', 'value');
+  // Handle any actions with this.on('myAction', function(val) { ... });
+
+  this.render(hbs`{{$1}}`);
+  assert.equal(this.\$().text().trim(), '');
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>integration</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Ember: Integration Test</description>
+</snippet>

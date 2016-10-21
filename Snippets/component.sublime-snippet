@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+import Ember from 'ember';
+
+export default Ember.Component.extend({
+  classNames: ['${1:${TM_FILENAME/\..*//}}']
+
+  // Lifecycle Hooks:
+  // init
+  // didReceiveAttrs
+  // willRender
+  // didInsertElement
+  // didRender
+  // didUpdateAttrs
+  // willUpdate
+  // didUpdate
+  // willDestroyElement
+  // willClearRender
+  // didDestroyElement
+
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>component</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Ember.Component.extend({ })</description>
+</snippet>

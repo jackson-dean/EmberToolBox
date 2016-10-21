@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+{{t-def "$1" key="i18n_$2"}}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>t-def</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>Ember t-def</description>
+</snippet>
