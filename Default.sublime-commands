@@ -1,6 +1,26 @@
 [
   {
     "caption": "Ember CLI: Generate Component",
-    "command": "ember_command", "args": {"ember_cli" : "g component"}
+    "command": "run_ember_command", "args": {"command": "generate", "entity": "component"}
+  },
+  {
+    "caption": "Ember CLI: Generate Route",
+    "command": "run_ember_command", "args": {"command" : "generate", "entity": "route"}
+  },
+  {
+    "caption": "Ember CLI: Generate In Repo Addon",
+    "command": "run_ember_command", "args": {"command" : "generate", "entity": "in-repo-addon"}
+  },
+  {
+    "caption": "Ember CLI: Generate Mixin",
+    "command": "run_ember_command", "args": {"command" : "generate", "entity": "mixin"}
+  },
+  {
+    "caption": "Ember CLI: Generate Util",
+    "command": "run_ember_command", "args": {"command" : "generate", "entity": "util"}
+  },
+  {
+    "caption": "Ember CLI: Generate Addon",
+    "command": "run_ember_command", "args": {"command" : "generate", "entity": "addon"}
   }
 ]
