@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "Ember CLI: Generate Component",
+    "command": "ember_command", "args": {"ember_cli" : "g component"}
+  }
+]
