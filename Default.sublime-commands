@@ -12,7 +12,47 @@
     "command": "ember_generate", "args": { "entity": "in-repo-addon" }
   },
   {
+    "caption": "Ember Toolbox: Generate In Repo Addon Component",
+    "command": "ember_generate", "args": { "entity": "component", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Route",
+    "command": "ember_generate", "args": { "entity": "route", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Mixin",
+    "command": "ember_generate", "args": { "entity": "mixin", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Controller",
+    "command": "ember_generate", "args": { "entity": "controller", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Helper",
+    "command": "ember_generate", "args": { "entity": "helper", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Util",
+    "command": "ember_generate", "args": { "entity": "util", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Service",
+    "command": "ember_generate", "args": { "entity": "service", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate In Repo Addon Model",
+    "command": "ember_generate", "args": { "entity": "model", "flag": "-ir" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Controller",
+    "command": "ember_generate", "args": { "entity": "controller" }
+  },
+  {
     "caption": "Ember Toolbox: Generate Mixin",
+    "command": "ember_generate", "args": { "entity": "mixin" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Helper",
     "command": "ember_generate", "args": { "entity": "mixin" }
   },
   {
@@ -20,8 +60,48 @@
     "command": "ember_generate", "args": { "entity": "util" }
   },
   {
+    "caption": "Ember Toolbox: Generate Service",
+    "command": "ember_generate", "args": { "entity": "service" }
+  },
+  {
     "caption": "Ember Toolbox: Generate Addon",
     "command": "ember_generate", "args": { "entity": "addon" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Model",
+    "command": "ember_generate", "args": { "entity": "model" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Component Test",
+    "command": "ember_generate", "args": { "entity": "component-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Acceptance Test",
+    "command": "ember_generate", "args": { "entity": "acceptance-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Model Test",
+    "command": "ember_generate", "args": { "entity": "model-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Conroller Test",
+    "command": "ember_generate", "args": { "entity": "controller-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Helper Test",
+    "command": "ember_generate", "args": { "entity": "helper-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Mixin Test",
+    "command": "ember_generate", "args": { "entity": "mixin-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Route Test",
+    "command": "ember_generate", "args": { "entity": "route-test" }
+  },
+  {
+    "caption": "Ember Toolbox: Generate Service Test",
+    "command": "ember_generate", "args": { "entity": "service-test" }
   },
   {
     "caption": "Ember Toolbox: Serve",

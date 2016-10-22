@@ -2,21 +2,28 @@ import sublime, sublime_plugin
 
 class EmberGenerateCommand(sublime_plugin.WindowCommand):
 
-  def run(self, entity):
+  def run(self, entity, flag=None):
     self.entity = entity
+    self.flag = flag
     caption = "New " + self.entity.replace("-", " ").title() + ":"
-    initial_text = ""
-    on_done = self.on_done
-    on_cancel = self.on_cancel
-    on_change = None
+    self.window.show_input_panel(caption, "", self.generate_entity, None, self.on_cancel);
 
-    self.window.show_input_panel(caption, initial_text, on_done, on_change, on_cancel);
+  def generate_entity(self, user_input):
+    if self.flag == "-ir":
+      self.entity_name = user_input
+      self.window.show_input_panel("Addon Name:", "", self.generate_in_repo_entity, None, self.on_cancel)
+    else:
+      shell_cmd = " ".join(["just", "ember", "g", self.entity, user_input])
+      self.run_ember_command(shell_cmd)
 
-  def on_done(self, user_input):
+  def generate_in_repo_entity(self, user_input):
+    shell_cmd = " ".join(["just", "ember", "g", self.entity, self.entity_name, "-ir", user_input])
+    self.run_ember_command(shell_cmd)
+
+  def run_ember_command(self, shell_cmd):
     variables = self.window.extract_variables()
     if "folder" in variables:
       folder = variables["folder"]
-      shell_cmd = " ".join(["ember", "generate", self.entity, user_input])
       self.window.run_command("exec", {
         "shell_cmd": shell_cmd,
         "working_dir": folder
@@ -28,4 +35,4 @@ class EmberGenerateCommand(sublime_plugin.WindowCommand):
     sublime.status_message("EmberCLI operation canceled.")
 
   def description(self):
-    return ("Run an ember cli command directory set to the current project root directory")
+    return ("Run an ember cli command with directory set to the current project root directory")
