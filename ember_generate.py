@@ -13,11 +13,11 @@ class EmberGenerateCommand(sublime_plugin.WindowCommand):
       self.entity_name = user_input
       self.window.show_input_panel("Addon Name:", "", self.generate_in_repo_addon_entity, None, self.on_cancel)
     else:
-      shell_cmd = " ".join(["just", "ember", "g", self.entity, user_input])
+      shell_cmd = " ".join(["ember", "g", self.entity, user_input])
       self.run_ember_command(shell_cmd)
 
   def generate_in_repo_addon_entity(self, user_input):
-    shell_cmd = " ".join(["just", "ember", "g", self.entity, self.entity_name, "-ir", user_input])
+    shell_cmd = " ".join(["ember", "g", self.entity, self.entity_name, "-ir", user_input])
     self.run_ember_command(shell_cmd)
 
   def run_ember_command(self, shell_cmd):
@@ -26,8 +26,7 @@ class EmberGenerateCommand(sublime_plugin.WindowCommand):
       folder = variables["folder"]
       self.window.run_command("exec", {
         "shell_cmd": shell_cmd,
-        "working_dir": folder,
-        "path": "/usr/local/linkedin/bin"
+        "working_dir": folder
       })
     else:
       sublime.status_message("Error: missing project name")
