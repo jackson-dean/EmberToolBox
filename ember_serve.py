@@ -9,7 +9,8 @@ class EmberServeCommand(sublime_plugin.WindowCommand):
       shell_cmd = " ".join(["just", "ember", "serve"])
       self.window.run_command("exec", {
         "shell_cmd": shell_cmd,
-        "working_dir": folder
+        "working_dir": folder,
+        "path": "/usr/local/linkedin/bin"
       })
     else:
       sublime.status_message("Error: missing project name")
