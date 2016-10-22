@@ -3,7 +3,7 @@
 //Add this import: import wait from 'ember-test-helpers/wait';
 //Make sure to return if this is the last async helper in the test
 wait().then(() => {
-
+  $1
 });
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -11,12 +11,12 @@ class EmberGenerateCommand(sublime_plugin.WindowCommand):
   def generate_entity(self, user_input):
     if self.flag == "-ir":
       self.entity_name = user_input
-      self.window.show_input_panel("Addon Name:", "", self.generate_in_repo_entity, None, self.on_cancel)
+      self.window.show_input_panel("Addon Name:", "", self.generate_in_repo_addon_entity, None, self.on_cancel)
     else:
       shell_cmd = " ".join(["just", "ember", "g", self.entity, user_input])
       self.run_ember_command(shell_cmd)
 
-  def generate_in_repo_entity(self, user_input):
+  def generate_in_repo_addon_entity(self, user_input):
     shell_cmd = " ".join(["just", "ember", "g", self.entity, self.entity_name, "-ir", user_input])
     self.run_ember_command(shell_cmd)
 

@@ -1,17 +1,16 @@
 <snippet>
   <content><![CDATA[
-import Ember from 'ember';
-
-export default Ember.Component.extend({
-  classNames: ['${1:${TM_FILENAME/\..*//}}']
-
+/**
+ * @Override
+ */
+willRender(...params) {
+  this._super(params);
   $1
-});
-
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>component</tabTrigger>
+  <tabTrigger>willRender</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>Ember.Component.extend({ })</description>
+  <description>Ember Lifecycle Hook: willRender</description>
 </snippet>
