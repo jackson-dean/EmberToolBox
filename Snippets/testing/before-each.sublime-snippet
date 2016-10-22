@@ -1,13 +1,12 @@
 <snippet>
   <content><![CDATA[
-{{t-def
-  "$1"
-  key="i18n_$2"
-}}
+beforeEach() {
+  $1
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>t-def</tabTrigger>
+  <tabTrigger>beforeEach</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>text.html.handlebars</scope>
-  <description>{{t-def "" key="i18n_"}}</description>
+  <scope>source.js</scope>
+  <description>Ember Test Helpers: beforeEach() {}</description>
 </snippet>
