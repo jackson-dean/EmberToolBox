@@ -53,7 +53,7 @@
   },
   {
     "caption": "Ember Toolbox: Generate Helper",
-    "command": "ember_generate", "args": { "entity": "mixin" }
+    "command": "ember_generate", "args": { "entity": "helper" }
   },
   {
     "caption": "Ember Toolbox: Generate Util",
