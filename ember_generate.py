@@ -36,7 +36,8 @@ class EmberGenerateCommand(sublime_plugin.WindowCommand):
       else:
         self.window.run_command("exec", {
           "shell_cmd": shell_cmd,
-          "working_dir": folder
+          "working_dir": folder,
+          "path": settings.get("ember_path", "/usr/local/bin/ember")
         })
     else:
       sublime.status_message("Error: missing project name")
