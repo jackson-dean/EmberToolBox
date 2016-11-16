@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * @Override
+ */
+afterModel(model, transition) {
+  $1
+},
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>afterModel</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Ember Route Hook: afterModel(model, transition) {}</description>
+</snippet>

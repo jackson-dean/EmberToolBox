@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+(format-name firstName=${1:firstName} lastName=${2:lastName} type="${3:full}")
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>formatname</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.handlebars</scope>
+  <description>Template Helper: format-name</description>
+</snippet>
