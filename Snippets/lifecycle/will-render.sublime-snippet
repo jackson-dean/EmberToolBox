@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 /**
- * @Override
+ * @override: ember lifecycle
  */
 willRender(...params) {
   this._super(params);

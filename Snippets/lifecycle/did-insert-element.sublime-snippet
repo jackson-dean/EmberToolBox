@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 /**
- * @Override
+ * @override: ember lifecycle
  */
 didInsertElement(...params) {
   this._super(params);
