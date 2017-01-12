@@ -4,7 +4,7 @@
  * @override: ember lifecycle
  */
 willUpdate(...params) {
-  this._super(params);
+  this._super(...params);
   $1
 }
 ]]></content>
